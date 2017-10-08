@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1 {
+    margin: .5em 0 1em;
+}
+
+    #grid {
+    margin: auto;
+    margin-top: .3em;
+    border-spacing: 0;
+border-collapse: collapse;
+}
+
+td {
+    border: 1px solid gray;
+}
+
+#grid input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 0;
+    transition: 400ms;
+    outline: none;
+    
+
+    background: white;
+}
+
+#grid input[type="checkbox"]:checked{
+    background: black;
+
+}
+
+.button, button {
+    padding: .3em .5em;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 4px;
+    box-shadow: 0 1px 0 hsla(0, 0%, 100%, .6) inset, 0 .15em  .1em -.1em rgba(0, 0, 0, .4);
+    font: inherit;
+    background: linear-gradient(hsla(0, 0%, 100%, .3), hsla(0, 0%, 100%, 0)) hsl(80, 80%, 35%);
+    color: white;
+    text-shadow: 0 .05em .05em rgba(0,0,0,.3);
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+}
+
+button:active, .button:active, input[type="checkbox"]:checked + label.button {
+    background-image: none;
+    box-shadow: 0 .05em .1em rgba(0,0,0,.5) inset;
+}
+
+button:disabled {
+    background-color: hsl(80, 20%, 40%); 
+    cursor: not-allowed;
+}
+
+#autoplay {
+    position: absolute;
+    clip: rect(0,0,0,0)
+}
